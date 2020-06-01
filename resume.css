@@ -1,12 +1,11 @@
 body{
     background-color:#212121;
-    width:160%;
-    margin: auto;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    width:auto;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 80%;
     display: grid;
-    grid-template-columns:1fr 1fr;
-    
+    text-align: center;
+    margin:auto;
 }
 
 #name{
@@ -14,7 +13,8 @@ body{
     color:#03A9F4;
     font-size: 35px;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    }
+}
+
 
 h1{
     text-align: left;
@@ -28,23 +28,27 @@ h2{
 }
 
 .resume{
-    display: grid;
-    grid-template-columns: 5fr 5fr;
     height: 100%;
-    text-align: justify;
-    margin:none;
-    width:111%
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
 }
 
 aside{
-    padding: 0px;
-    height:99.80%;
+    height:100%;
     text-align: justify;
     background-color: #03A9F4;
-    width:25%;
-    margin-left:auto;
+    width:30%;
+    float:left;
 }
 
+.infome{
+    padding: 10px;
+    background-color: white;
+    height: auto;
+    width:50%;
+    float: left;
+}
 
 img{
     display: block;
@@ -54,7 +58,7 @@ img{
     margin: auto;
     border-radius: 50% 50%;
     border: 5px solid #2196F3 ;
-    }
+}
 
 #info1{
     background-color: #263238;
@@ -73,8 +77,8 @@ img{
     font-size: 20px;
     font-style: thick;
     width:98%;
-    text-align: center;
-    }
+    text-align: center; 
+}
 
 #info3{
     background-color: #263238;
@@ -84,12 +88,12 @@ img{
     font-style: thick;
     width:98%;
     text-align: center;
+    margin-top: 250%;
 }
 
 
 .info4{
-    padding: 10px;
-    word-spacing: 2px;
+    text-align: center;
 }
 
 .info5{
@@ -100,13 +104,6 @@ img{
     padding: 10px;
 }
 
-.infome{
-    padding: 20px;
-    background-color: white;
-    height: 97.55%;
-    width:50%;
-}
-
 #hr{
     text-decoration: #03A9F4 underline;
 }
@@ -114,7 +111,7 @@ img{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    text-align:left;
+    text-align: left;
     font-size: 100%;
 }
 
@@ -139,21 +136,34 @@ hr{
     grid-template-rows: 50% 100%;
 }
 
+.inf{
+    display: inline-block;
+}
+
 .inf2{
+    
     text-align: justify;
+}
+
+#inf3{
+    margin-left:20px;
+    margin-top:-8px;
 }
 
 .fas{
     color:#03A9F4;
     font-size: 7px;
-    vertical-align: middle;
+    padding: 5px;
+    
 }
 
 .far{
     color:#03A9F4;
 }
+
 .fa-plane, .fa-drum, .fa-paw, .fa-gamepad{
     color:black;
+    letter-spacing: 5px;
 }
 
 #education{
@@ -172,4 +182,22 @@ hr{
     font-size: 20px;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 799px){
+aside{
+width:100%;
+float:none;
+height:auto;
+}
+
+.infome{
+width:100%;
+float:none;
+}
+
+.resume{
+    width:100%;
+    float:none;
+}
 }
