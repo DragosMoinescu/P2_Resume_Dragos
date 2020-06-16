@@ -52,12 +52,17 @@ aside{
 
 img{
     display: block;
-    height:140px;
-    width: 140px;
+    height:180px;
+    width: 180px;
     text-align: center;
     margin: auto;
     border-radius: 50% 50%;
     border: 5px solid #2196F3 ;
+}
+
+.picture{
+    height: 10%;
+    padding-top: 20px;
 }
 
 #info1{
@@ -67,7 +72,7 @@ img{
     font-size: 20px;
     font-style: thick;
     width:98%;
-    text-align: center;
+    text-align: center; 
 }
 
 #info2{
@@ -87,23 +92,23 @@ img{
     font-size: 20px;
     font-style: thick;
     width:98%;
-    text-align: center;
-    margin-top: auto;
+    text-align: center; 
 }
 
 
 .info4{
     text-align: center;
-    height: 15%;
-    border: 2px solid blue;3
+    height: 10%;
 }
 
 .info5{
-    padding: 10px;
+    height: 40%;
+    padding: 5px;
 }
 
 .info3{
-    padding: 10px;
+    height: 30%;
+    padding-left: 5px;
 }
 
 #hr{
@@ -166,7 +171,7 @@ hr{
 
 .fa-plane, .fa-drum, .fa-paw, .fa-gamepad{
     color:black;
-    letter-spacing: 5px;
+    letter-spacing: auto;
 }
 
 #education{
