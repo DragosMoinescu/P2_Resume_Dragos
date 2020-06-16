@@ -88,12 +88,14 @@ img{
     font-style: thick;
     width:98%;
     text-align: center;
-    margin-top: 250%;
+    margin-top: auto;
 }
 
 
 .info4{
     text-align: center;
+    height: 15%;
+    border: 2px solid blue;3
 }
 
 .info5{
@@ -107,6 +109,7 @@ img{
 #hr{
     text-decoration: #03A9F4 underline;
 }
+
 .reference{
     display:grid;
     grid-template-columns: 1fr 1fr;
