@@ -111,7 +111,7 @@ img{
     padding-left: 5px;
 }
 
-#hr{
+#name-underline{
     text-decoration: #03A9F4 underline;
 }
 
@@ -130,15 +130,10 @@ img{
 
 hr{
     color:#03A9F4;
+    grid-column: 1 / 3;
 }
 
 .content{
-    display:grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 50% 100%;
-}
-
-.content2{
     display:grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 50% 100%;
@@ -180,10 +175,9 @@ hr{
     font-weight: bolder;
 }
 
-#experience{
-    font-size: 20px;
+.right-heading{
+    grid-column: 1 / 3;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-weight: bolder;
 }
 
 #reference{
