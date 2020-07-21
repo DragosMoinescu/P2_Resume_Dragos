@@ -1,25 +1,34 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 body{
     background-color:#212121;
     width:auto;
-    font-family: 'Barlow Condensed', sans-serif;
     font-size: 80%;
-    display: grid;
     text-align: center;
     margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #name{
     text-align:justify;
     color:#03A9F4;
     font-size: 35px;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
+.job-title{
+    margin:10px 0 45px 0;
+}
 
 h1{
     text-align: left;
     font-size: 35px;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: 100;
+    margin-bottom: 0;
 }
 
 h2{
@@ -27,27 +36,40 @@ h2{
     font-size: 20px;
 }
 
+.location1{
+    margin: -15px 0 0 0;
+    padding-left: 17px;
+}
+
+.location2{
+    margin: -15px 0 0 0;
+    padding-left: 20px;
+}
+
+
 .resume{
-    height: 100%;
+    display:flex;
     text-align: left;
     max-width: 800px;
     margin: auto;
 }
 
 aside{
-    height:100%;
     text-align: justify;
     background-color: #03A9F4;
-    width:30%;
-    float:left;
+    width:35%;
 }
 
-.infome{
-    padding: 10px;
+main{
+    padding: 0 25px 0 35px;
     background-color: white;
-    height: auto;
-    width:50%;
-    float: left;
+    width:60%;
+}
+
+.education, 
+.experience{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 img{
@@ -61,54 +83,53 @@ img{
 }
 
 .picture{
-    height: 10%;
+    height: 12%;
     padding-top: 20px;
 }
 
-#info1{
+.info{
     background-color: #263238;
     color:#03A9F4;
     padding: 5px;
     font-size: 20px;
     font-style: thick;
-    width:98%;
     text-align: center; 
 }
 
-#info2{
-    background-color: #263238;
-    color:#03A9F4;
-    padding: 5px;
-    font-size: 20px;
-    font-style: thick;
-    width:98%;
-    text-align: center; 
+a:hover{
+    color: #DC143C;
+    font-size:13px;
 }
 
-#info3{
-    background-color: #263238;
-    color:#03A9F4;
-    padding: 5px;
-    font-size: 20px;
-    font-style: thick;
-    width:98%;
-    text-align: center; 
+.about{
+    height:53%;
+    text-align: justify;
 }
 
-
-.info4{
-    text-align: center;
-    height: 10%;
+.contact{
+    height:20%;
 }
 
-.info5{
-    height: 40%;
-    padding: 5px;
+.contact > p{
+    margin: 0;
 }
 
-.info3{
-    height: 30%;
-    padding-left: 5px;
+/* This adds space between the contact items */
+.contact p:nth-child(2n + 1){
+    margin-bottom: 15px;
+}
+
+.hobbies{
+    height:15%;
+}
+
+.description > p{ 
+    padding: 0 50px;
+}
+
+.icons{
+    text-align:center;
+    padding-top: 20px;
 }
 
 #name-underline{
@@ -121,43 +142,26 @@ img{
     grid-template-rows: 1fr;
     text-align: left;
     font-size: 100%;
+    margin-bottom: 30px;
 }
 
-.inform{
-    text-align: left;
-    display:grid;
+.reference p{
+    margin:5 0 0 0;
 }
 
 hr{
     color:#03A9F4;
-    grid-column: 1 / 3;
 }
 
 .content{
-    display:grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 50% 100%;
-}
-
-.inf{
-    display: inline-block;
-}
-
-.inf2{
-    
-    text-align: justify;
-}
-
-#inf3{
-    margin-left:20px;
-    margin-top:-8px;
+    display:flex;
+    flex-direction: column;
 }
 
 .fas{
     color:#03A9F4;
     font-size: 7px;
     padding: 5px;
-    
 }
 
 .far{
@@ -169,37 +173,29 @@ hr{
     letter-spacing: auto;
 }
 
-#education{
-    font-size: 20px;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-weight: bolder;
-}
-
 .right-heading{
     grid-column: 1 / 3;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #reference{
     font-size: 20px;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
 
 @media screen and (max-width: 799px){
-aside{
-width:100%;
-float:none;
-height:auto;
-}
+    aside, 
+    main{
+        width:100%;
+    }
+        
+    .resume{
+        width:100%;
+        flex-direction:column;
+    }
 
-.infome{
-width:100%;
-float:none;
-}
-
-.resume{
-    width:100%;
-    float:none;
-}
+    .icons{
+        margin-bottom: 25px;
+    }
 }
